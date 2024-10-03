@@ -1,0 +1,78 @@
+.header{
+    height: 34vw;
+   
+   
+    /* border-radius: 2px 2px; */
+    width: 100%;
+    background-color: aquamarine;
+    background: url("/carousel_img.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.header-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 8%;
+    right: 6vw;
+    animation: fadeIn 3s;
+}
+
+.header-content h2{
+    font-weight: 400;
+    font-size: 34px;
+    color: darkblue;
+    text-shadow: 2px 2px tan;
+}
+
+.header-content p{
+    font-size: 1.5vw;
+    color: darkmagenta;
+    text-shadow: 1px 1px darkkhaki;
+}
+
+.header-content button{
+    border: none;
+    color: #181818;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: #a3ddcf;
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+}
+
+/*==========================1050px======================*/
+
+@media ( max-width : 1050px ) {
+
+    
+    .header-content{
+        max-width: 45%;
+    }
+}
+
+/*=====================================750px================================*/
+
+@media ( max-width : 750px ) {
+
+    .header{
+        height: 50vh;
+    }
+    .header-content{
+        max-width: 58%;
+    }
+    .header-content p{
+        display: none;
+    }
+    .header-content h2{
+        padding: 16px;
+    }
+    .header-content button{
+        padding: 2vw 4vw;
+        margin-left: 14px;
+        
+    }
+}
